@@ -1,2 +1,4 @@
-package com.projects.tennisbc.services;public class MatchesService {
+package com.projects.tennisbc.services;
+
+public class MatchesService {
 }
