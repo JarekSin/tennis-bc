@@ -1,0 +1,20 @@
+databaseChangeLog:
+  - changeSet:
+      id: 001-fixtures-schema
+      author: js
+      changes:
+        - createTable:
+            tableName: fixtures
+            columns:
+              - column:
+                  name: id
+                  type: uuid
+                  constraints:
+                    primaryKey: true
+                    nullable: false
+              - column:
+                  name: firstRegistrationId
+                  type: numeric
+              - column:
+                  name: secondRegistrationId
+                  type: numeric

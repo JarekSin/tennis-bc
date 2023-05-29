@@ -1,0 +1,20 @@
+databaseChangeLog:
+  -  changeSet:
+       id:  003-fixtureSchemaAddIncomeDate.yaml
+       author:  js
+       changes:
+         - addColumn:
+             tableName: fixtures
+             columns:
+               - column:
+                   name: challenge_date
+                   type: timestamp
+                   defaultValue: 2022-01-01T00:00:01Z
+                   constraints:
+                     nullable: false
+
+
+
+
+
+

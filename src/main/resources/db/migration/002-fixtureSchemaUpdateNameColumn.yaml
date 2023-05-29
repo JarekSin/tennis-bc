@@ -1,0 +1,13 @@
+databaseChangeLog:
+-  changeSet:
+     id:  002-fixtureSchemaUpdateNameColumn.yaml
+     author:  js
+     changes:
+       -  renameColumn:
+            newColumnName:  firstregistrationid
+            oldColumnName:  firstRegistrationId
+            tableName:  fixtures
+       -  renameColumn:
+               newColumnName:  secondregistrationid
+               oldColumnName:  secondRegistrationId
+               tableName:  fixtures

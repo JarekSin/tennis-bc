@@ -8,7 +8,7 @@ import org.springframework.security.config.annotation.web.configuration.EnableWe
 
 import javax.sql.DataSource;
 
-@SpringBootApplication(exclude = { DataSourceAutoConfiguration.class,
+@SpringBootApplication(exclude = {
 		SecurityAutoConfiguration.class})
 public class TennisBcApplication {
 

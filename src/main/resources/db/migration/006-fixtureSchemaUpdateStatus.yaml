@@ -1,0 +1,23 @@
+databaseChangeLog:
+  -  changeSet:
+       id:  006-fixtureSchemaUpdateStatus.yaml
+       author:  js
+       changes:
+         - update:
+            tableName: fixtures
+            column:
+              name: status
+              value: SCHEDULING_THE_MATCH
+            where: status = '0'
+         - update:
+             tableName: fixtures
+             column:
+               name: status
+               value: MATCH_DATE_IS_SET
+             where: status = '1'
+         - update:
+             tableName: fixtures
+             column:
+               name: status
+               value: END_OF_THE_MATCH
+             where: status = '2'

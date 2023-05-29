@@ -1,0 +1,20 @@
+databaseChangeLog:
+  - include:
+      file: db/migration/001-fixtureSchema.yaml
+  - include:
+      file: db/migration/002-fixtureSchemaUpdateNameColumn.yaml
+  - include:
+      file: db/migration/003-fixtureSchemaAddIncomeDate.yaml
+  - include:
+      file: db/migration/004-fixtureSchemaAddMatchId.yaml
+  - include:
+      file: db/migration/005-fixtureSchemaAddFixtureStatus.yaml
+  - include:
+      file: db/migration/006-fixtureSchemaUpdateStatus.yaml
+#  - include:
+#      file: db/migration/006-assetsSchemaAddUserId.sql
+#  - include:
+#      file: db/migration/006-assetsSchemaAddUserId.sql
+#  - include:
+#      file: db/migration/006-assetsSchemaAddUserId.sql
+

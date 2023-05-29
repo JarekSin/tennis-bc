@@ -1,0 +1,14 @@
+databaseChangeLog:
+  -  changeSet:
+       id:  004-fixtureSchemaAddMatchId.yaml
+       author:  js
+       changes:
+         - addColumn:
+             tableName: fixtures
+             columns:
+               - column:
+                   name: match_id
+                   type: numeric
+                   defaultValue: 0
+                   constraints:
+                     nullable: false
